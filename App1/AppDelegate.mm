@@ -74,7 +74,7 @@
         sleep(3);
         
         
-        //read the address of textField(created by main-process) from /tmp/file.txt
+        //read the windowNumber of NSWindow(created by main-process) from /tmp/file.txt
         std::ifstream infile;
         std::string windowNumber;
         infile.open(FILE_PATH, std::ios::in);

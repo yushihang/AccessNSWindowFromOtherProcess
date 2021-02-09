@@ -99,7 +99,7 @@
         char        execPath[PATH_MAX];
         uint32_t    execPathSize = sizeof(execPath);
         (void) _NSGetExecutablePath(execPath, &execPathSize);
-        const char * args[] = {execPath, "is_subprogress", windowNumber.c_str(), nullptr};
+        const char * args[] = {execPath, "in_subprocess", windowNumber.c_str(), nullptr};
         (void) execv(execPath, (char * const *) args);
 
         kill(getpid(), SIGKILL);

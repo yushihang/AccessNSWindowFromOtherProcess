@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
         if (argc >= 3)
         {
             //see AppDelegate.mm
-            if (strcmp(argv[1], "is_subprogress") == 0)
+            if (strcmp(argv[1], "in_subprocess") == 0)
             {
                 intptr_t windowNumber = atoll(argv[2]);
                 
